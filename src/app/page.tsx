@@ -27,7 +27,7 @@ export default async function Home() {
                 </div>
                 <div className="p-4 bg-white">
                   <h2 className="font-medium text-lg mb-2 text-gray-800">{recipe.title}</h2>
-                  <button className="mt-2 bg-orange-500 hover:bg-orange-600 text-white font-medium py-2 px-4 rounded-md w-full transition-colors duration-200">
+                  <button className="mt-2 bg-orange-500 hover:bg-orange-600 text-white font-medium py-2 px-4 rounded-md w-full transition-colors duration-200 cursor-pointer">
                     View Ingredients
                   </button>
                 </div>
