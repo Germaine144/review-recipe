@@ -39,5 +39,26 @@
       "Add cheese and toppings.",
       "Bake for 12-15 minutes until crust is golden."
     ]
+  },
+    {
+    "id": 2,
+    "slug": "strawberries-and-cream-frappuccino",
+    "title": "Strawberries & Cream Frappuccino",
+    "image": "milk.jpg",
+    "ingredients": [
+      "1 cup frozen strawberries",
+      "1/2 cup milk",
+      "1/2 cup heavy cream",
+      "2 tbsp sugar",
+      "1/2 cup ice",
+      "Whipped cream (for topping)"
+    ],
+    "steps": [
+      "Blend frozen strawberries",
+       "milk",
+       "heavy cream"," sugar", 
+       "and ice until smooth.",
+      "Pour the frappuccino into a glass and top with whipped cream."
+    ]
   }
 ]
