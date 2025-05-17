@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "slug": "pancakes",
+    "title": "Fluffy Pancakes",
+    "image": "pancake.jpg",
+    "ingredients": [
+      "1 cup all-purpose flour",
+      "1 tbsp sugar",
+      "2 tsp baking powder",
+      "1 cup milk",
+      "1 egg",
+      "2 tbsp melted butter"
+    ],
+    "steps": [
+      "Mix dry ingredients in a bowl.",
+      "Whisk milk, egg, and butter in another bowl.",
+      "Combine wet and dry ingredients.",
+      "Heat a non-stick pan and pour batter to form pancakes.",
+      "Cook until bubbles form, then flip and cook until golden."
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "pizza",
+    "title": "Homemade Pizza",
+    "image": "pizza.jpg",
+    "ingredients": [
+      "1 pizza dough",
+      "1/2 cup tomato sauce",
+      "1 cup mozzarella cheese",
+      "1/4 cup pepperoni",
+      "1 tsp oregano"
+    ],
+    "steps": [
+      "Preheat oven to 450°F (230°C).",
+      "Roll out pizza dough on a baking sheet.",
+      "Spread tomato sauce over dough.",
+      "Add cheese and toppings.",
+      "Bake for 12-15 minutes until crust is golden."
+    ]
+  }
+]
