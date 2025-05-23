@@ -1,4 +1,3 @@
-// app/layout.tsx
 import { ClerkProvider } from '@clerk/nextjs';
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
@@ -24,11 +23,20 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Add this line to check if the environment variable is loaded
-  console.log('Clerk Key:', process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY);
+  // Validate the Clerk publishable key
+  const clerkPublishableKey = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
   
+  if (!clerkPublishableKey) {
+    throw new Error(
+      'Missing NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY environment variable. Please set it in your .env.local file.'
+    );
+  }
+
+  // Log for debugging
+  console.log('Clerk Key:', clerkPublishableKey);
+
   return (
-    <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY!}>
+    <ClerkProvider publishableKey={clerkPublishableKey}>
       <html lang="en">
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
           {children}
